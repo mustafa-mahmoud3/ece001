@@ -1,0 +1,71 @@
+
+<html>
+  <head>
+<title>table</title>
+    
+  </head>
+
+  <body>
+
+    <table>
+        <tbody>
+          <tr>
+            <td>Features</td>
+            <td>Hadoop</td>
+            <td>Spark</td>
+            <td>Flink</td>
+            <td>Storm</td>
+            <td >Samza</td>
+          </tr>
+          <tr>
+            <td>Data pro- cessing</td>
+            <td>It is a batch processing system.</td>
+            <td>It is a batch processing and stream processing system</td>
+            <td>It is a batch processing as well as stream processing system</td>
+            <td>It supports stream processing.</td>
+            <td>It supports stream processing.</td>
+          </tr>
+          <tr>
+            <td>Streaming engine</td>
+            <td>MapReduce is a batch-oriented process- ing tool. It takes large data sets in the input. processes it and produces the results.</td>
+            <td>Apache Spark streaming processes data streams in micro-batches.</td>
+            <td>Apache Flink is the true streaming engine It uses streams for workloads: SQL, micro batch. and batch.</td>
+            <td>Storm processes events one by one.</td>
+            <td>Samza processes events one by one.</td>
+          </tr>
+          <tr>
+            <td>Data flow</td>
+            <td>MapReduce computation data flow does not have any loops. It is a chain of stages.</td>
+            <td>Spark represents it as a direct acyclic graph (DAG).</td>
+            <td>it supports controlled cyclic dependency graphs in runtime.</td>
+            <td>Storm's topology is designed as a directed acyclic graph (DAG) with spouts, bolts and streams used to process data.</td>
+            <td>Samza relies on Kafka's semantics to define the way that streams are handled.</td>
+          </tr>
+          <tr>
+            <td>Fault toler- ance</td>
+            <td>MapReduce is highly fault-tolerant There is no need to restart the application from scratch in case of any failure in Hadoop.</td>
+            <td>Apache Spark streaming recovers lost work and with no extra code or configuration, it de- livers exactly-once semantics out-of-the-box.</td>
+            <td>The fault tolerance is based on Lightweight Distributed Snapshots.</td>
+            <td>When workers die, Storm wil automatically restart them. If a node dies, the worker wil be restarted on another node.</td>
+            <td>Whenever a machine in the cluster fails, Samza works with YARN to transparently migrate your tasks to another machine.</td>
+          </tr>
+          <tr>
+            <td>Scalability</td>
+            <td>MapReduce has incredible scalability poten- tial and has been used in the production of tens of thousands of nodes.</td>
+            <td>It is highly scalable We can keep adding n number of nodes in the cluster. A large known Spark cluster is of 8000 nodes.</td>
+            <td>Apache Flink is also highly scalable. We can keep adding 'n' number of nodes in the cluster: a large known Flink cluster is of thousands of nodes.</td>
+            <td>Scalable, with parallel calculations that run across a cluster of machines.</td>
+            <td>Samza is partitioned and distributed at every level. Kafka provides ordered, partitioned fault tolerant streams. YARN provides a distributed environment for Samza.</td>
+          </tr>
+          <tr>
+            <td>Language support</td>
+            <td>It supports Java. C. C++. Ruby, Groovy, Pert and Python.</td>
+            <td>It supports Java. Scala. Python and R.</td>
+            <td>It supports Java, Scala, Python and R.</td>
+            <td>Storm is written in Java and Clojure but has good support for non-JVM languages.</td>
+            <td>Samza is written in Java and Scala. it also sup- ports JVM languages.</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
